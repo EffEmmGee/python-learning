@@ -19,6 +19,7 @@ Now the Variable 'message' has been replaced, or overwritten.  Both lines will b
 ## Strings
 Strings are numbers or letters contained within "quotation marks" or 'apostrophes'.
 Either can be used as long as you're consistent.
+
 This allows a 'string to contain "a quote" within'
 
 ### Changing Case in a String with Methods
@@ -29,7 +30,9 @@ print(name.upper())
 print(name.lower())
 ```
 title = Capitalises first letter of each word
+
 upper = Capitalises all characters
+
 lower = changes any uppercase to lowercase
 
 ## if Statement
