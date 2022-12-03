@@ -55,6 +55,52 @@ print(message)
 If this was added to the previous program would print the message "Hello, Ada Lovelace!" whilst simultaneously storing it in a variable for easy calling.
 
 ### Adding Tabs or Newlines to Strings
+Tab or Indent = \t
+```python
+>>> print("Python")
+Python
+>>> print("\tPython")
+    Python
+```
+
+Newline = \n
+```python
+>>> print("Languages:\nPython\nC\nJavaScript")
+Languages:
+Python
+C
+JavaScript
+```
+
+They can be combined too
+```python
+>>> print("Languages:\n\tPython\n\tC\n\tJavaScript")
+Languages:
+    Python
+    C
+    JavaScript
+```
+
+### Removing Whitespace
+Whitespace are just spaces that could be accidentally inputted or otherwise.
+
+Python interperets these as intentional so you can do the following to ensure certain spaces arent meant to be there.
+
+```python
+>>> favorite_language = ' python '
+>>> favorite_language.rstrip()
+' python'
+>>> favorite_language.lstrip()
+'python '
+>>> favorite_language.strip()
+'python'
+```
+.rstrip() = Removes spaces from the Right end
+
+.lstrip() = Removes spaces from the left/beginning
+
+.strip() = Removes spaces fron either end
+
 
 ## if Statement
 ```python
