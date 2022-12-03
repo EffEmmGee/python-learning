@@ -35,6 +35,27 @@ upper = Capitalises all characters
 
 lower = changes any uppercase to lowercase
 
+### Concatenating Strings
+Useful to combine inputs from seperate entries
+```python
+first_name = "ada"
+last_name = "lovelace"
+full_name = first_name + " " + last_name
+print("Hello, " + full_name.title() + "!")
+```
+The + combines the variables together.
+
+A space in quotation marks adds a space (" ")
+
+This can also be stored in a variable
+```python
+message = "Hello, " + full_name.title() + "!"
+print(message)
+```
+If this was added to the previous program would print the message "Hello, Ada Lovelace!" whilst simultaneously storing it in a variable for easy calling.
+
+### Adding Tabs or Newlines to Strings
+
 ## if Statement
 ```python
 if n > 5:
