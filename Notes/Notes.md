@@ -99,8 +99,22 @@ Python interperets these as intentional so you can do the following to ensure ce
 
 .lstrip() = Removes spaces from the left/beginning
 
-.strip() = Removes spaces fron either end
+.strip() = Removes spaces from either end
 
+### Numbers as Strings (or Text)
+
+```python
+age = 25
+str(age)
+```
+Or put the number directly inbetween the parenthesis
+
+```python
+# either
+number_string = '25'
+# or
+number_string = str(25)
+```
 
 ## if Statement
 ```python
