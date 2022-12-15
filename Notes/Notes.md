@@ -128,7 +128,7 @@ consoles = ['xbox', 'playstation', 'switch', 'steam deck']
 print(consoles)
 ```
 
-I tems can be printed from a list using numbers starting from 0, for example:
+Items can be printed from a list using numbers starting from 0, for example:
 ```python
 consoles = ['xbox', 'playstation', 'switch', 'steam deck']
 print(consoles[0])
@@ -149,6 +149,42 @@ message = "I dont yet have my own " + consoles[-1].title() + "."
 print(message)
 ```
 Would return: I dont yet have my own Steam Deck.
+
+## Making edits to a List
+General info about altering items in a List
+
+### Swapping items out for another
+Doing a simple swap
+```python
+consoles = ['xbox', 'playstation', 'switch', 'steam deck']
+
+consoles[0] = 'xbox series x'
+print(consoles)
+```
+All this has done is change the first item in the list to the new one.  The newly printed List would be:
+['xbox series x', 'playstation', 'switch', 'steam deck']
+
+### Adding items to a list
+To add a new item to the end of an existing list, you would append it.
+```python
+consoles = ['xbox', 'playstation', 'switch', 'steam deck']
+print(consoles)
+# The above is the initial list
+# Below is the 'appended' list that has an addition.
+
+consoles = ['xbox', 'playstation', 'switch', 'steam deck']
+consoles.append('dreamcast')
+print(consoles)
+```
+This would result in the following:
+['xbox', 'playstation', 'switch', 'steam deck']
+['xbox', 'playstation', 'switch', 'steam deck', 'dreamcast']
+
+
+You could even start off with an empty list and 'append' items to it as you go along by starting off with:
+```python
+emptyList = []
+```
 
 ## if Statement
 ```python
