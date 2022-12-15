@@ -186,6 +186,48 @@ You could even start off with an empty list and 'append' items to it as you go a
 emptyList = []
 ```
 
+### Slotting items into a list
+Not to be confused with 'append', you can insert or slot new items into a list with insert().  Do this by telling it the index location of where you want the new item, and the existing items will move one space to the right.
+```python
+consoles = ['xbox', 'playstation', 'switch', 'steam deck']
+consoles.insert(0, 'dreamcast')
+print(consoles)
+```
+This would print:
+['dreamcast', 'xbox', 'playstation', 'switch', 'steam deck']
+
+### Permenantly removing items from a list
+By using the del statement you can remove items permenantly from a list if you know the position.
+```python
+consoles = ['xbox', 'playstation', 'switch', 'steam deck']
+print(consoles)
+
+del consoles[1]
+print(consoles)
+```
+Here I've just removed 'playstation' from the list.
+
+### Removing, but NOT deleting, an item from a list
+Using the pop() Method you can remove an item form a list and store it somewhere else temporarily to be called upon later.
+
+
+Simply using pop() will 'pop' the last item off of the list, whereas specifying the item location number pop(2), will in thi case remove the 3rd item in the list.
+```python
+consoles = ['xbox', 'playstation', 'switch', 'steam deck']
+print(consoles)
+
+poppedConsoles = consoles.pop(1)
+print(consoles)
+print(poppedConsoles)
+```
+Above I start with a list and printed it.
+Then I created a Variable to store 'playstation' (which was at position 1) and simultaneously popped 'playstation' straight into it.
+Next I asked to print the new main List as well as the newly created pop list which would give you:
+['xbox', 'playstation', 'switch', 'steam deck']
+['xbox', 'switch', 'steam deck']
+
+
+
 ## if Statement
 ```python
 if n > 5:
