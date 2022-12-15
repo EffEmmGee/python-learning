@@ -116,6 +116,40 @@ number_string = '25'
 number_string = str(25)
 ```
 
+## Lists
+
+In Python, square brackets [] denote a list, and individual items in the list are separated by commas.
+
+### Creating a list
+
+Example of a list:
+```python
+consoles = ['xbox', 'playstation', 'switch', 'steam deck']
+print(consoles)
+```
+
+I tems can be printed from a list using numbers starting from 0, for example:
+```python
+consoles = ['xbox', 'playstation', 'switch', 'steam deck']
+print(consoles[0])
+```
+This would print the first item in the above list which would be xbox.  By putting -1 instead of 0 would give you the last item at the end of the list (-2, second to last etc)
+Methods can also be used if you want to be all fancy and capitalise them etc
+```python
+consoles = ['xbox', 'playstation', 'switch', 'steam deck']
+print(consoles[0].title())
+```
+This would capitalise the first letter: Xbox
+
+### Forming or concatenating a sentence from a List
+```python
+consoles = ['xbox', 'playstation', 'switch', 'steam deck']
+message = "I dont yet have my own " + consoles[-1].title() + "."
+
+print(message)
+```
+Would return: I dont yet have my own Steam Deck.
+
 ## if Statement
 ```python
 if n > 5:
